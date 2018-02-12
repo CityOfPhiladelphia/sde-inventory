@@ -1,0 +1,360 @@
+{
+  "GIS_311": {
+    "TABLE_TO_REMOVE": {
+      "fields": {
+        "ADDRESS": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "AGENCY_RESPONSIBLE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "EXPECTED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "LAT": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "LON": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "MEDIA_URL": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "OBJECTID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": false
+        },
+        "REQUESTED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "SERVICE_CODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NAME": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NOTICE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_REQUEST_ID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "SHAPE": {
+          "db_type": "ST_GEOMETRY",
+          "length": 256,
+          "nullable": true
+        },
+        "STATUS": {
+          "db_type": "VARCHAR2",
+          "length": 6,
+          "nullable": true
+        },
+        "STATUS_NOTES": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "UPDATED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "ZIPCODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        }
+      },
+      "indexes": {
+        "A5196_IX1": {
+          "fields": [
+            "SHAPE"
+          ]
+        },
+        "R372392_SDE_ROWID_UK": {
+          "fields": [
+            "OBJECTID"
+          ]
+        }
+      },
+      "privileges": [
+        {
+          "grantee": "SDE",
+          "privilege": "SELECT"
+        }
+      ],
+      "row_count": 1856161,
+      "sde_type": "Feature Class",
+      "srid": 4326
+    },
+    "SALESFORCE_CASES": {
+      "fields": {
+        "FIELD_TO_REMOVE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "FIELD_TO_UPDATE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "DESCRIPTION": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "DESCRIPTION_FULL": {
+          "db_type": "NCLOB",
+          "length": 4000,
+          "nullable": true
+        },
+        "EXPECTED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "MEDIA_URL": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "OBJECTID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": false
+        },
+        "PRIVATE_CASE": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "REQUESTED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "SERVICE_CODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NAME": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NOTICE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_REQUEST_ID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "SHAPE": {
+          "db_type": "ST_GEOMETRY",
+          "length": 256,
+          "nullable": true
+        },
+        "STATUS": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "STATUS_NOTES": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SUBJECT": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "TYPE_": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "UPDATED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "ZIPCODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        }
+      },
+      "indexes": {
+        "INDEX_TO_REMOVE": {
+          "fields": [
+            "INDEX_TO_REMOVE_FIELD"
+          ]
+        },
+        "INDEX_TO_UPDATE": {
+          "fields": [
+            "SHAPE"
+          ]
+        },
+        "R686171_SDE_ROWID_UK": {
+          "fields": [
+            "OBJECTID"
+          ]
+        }
+      },
+      "privileges": [
+        {
+          "grantee": "SDE",
+          "privilege": "SELECT"
+        },
+        {
+          "grantee": "PRIVILEGE_TO_REMOVE",
+          "privilege": "SELECT"
+        }
+      ],
+      "row_count": 2318080,
+      "sde_type": "Feature Class",
+      "srid": 4326
+    }
+  },
+  "USER_TO_REMOVE": {
+    "PUBLIC_CASES_FC": {
+      "fields": {
+        "ADDRESS": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "AGENCY_RESPONSIBLE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "EXPECTED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "LAT": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "LON": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "MEDIA_URL": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "OBJECTID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": false
+        },
+        "REQUESTED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "SERVICE_CODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NAME": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NOTICE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_REQUEST_ID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "SHAPE": {
+          "db_type": "ST_GEOMETRY",
+          "length": 256,
+          "nullable": true
+        },
+        "STATUS": {
+          "db_type": "VARCHAR2",
+          "length": 6,
+          "nullable": true
+        },
+        "STATUS_NOTES": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "UPDATED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "ZIPCODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        }
+      },
+      "indexes": {
+        "A5196_IX1": {
+          "fields": [
+            "SHAPE"
+          ]
+        },
+        "R372392_SDE_ROWID_UK": {
+          "fields": [
+            "OBJECTID"
+          ]
+        }
+      },
+      "privileges": [
+        {
+          "grantee": "PRIVILEGE_GRANTEE_TO_BE_REMOVED",
+          "privilege": "SELECT"
+        }
+      ],
+      "row_count": 1856161,
+      "sde_type": "Feature Class",
+      "srid": 4326
+    }
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "GIS_311": {
+    "SALESFORCE_CASES": {
+      "fields": {
+        "FIELD_TO_ADD": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "FIELD_TO_UPDATE": {
+          "db_type": "VARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "DESCRIPTION": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "DESCRIPTION_FULL": {
+          "db_type": "NCLOB",
+          "length": 4000,
+          "nullable": true
+        },
+        "EXPECTED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "MEDIA_URL": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "OBJECTID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": false
+        },
+        "PRIVATE_CASE": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "REQUESTED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "SERVICE_CODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NAME": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NOTICE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_REQUEST_ID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "SHAPE": {
+          "db_type": "ST_GEOMETRY",
+          "length": 256,
+          "nullable": true
+        },
+        "STATUS": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "STATUS_NOTES": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SUBJECT": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "TYPE_": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "UPDATED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "ZIPCODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        }
+      },
+      "indexes": {
+        "INDEX_TO_ADD": {
+          "fields": [
+            "OBJECTID"
+          ]
+        },
+        "INDEX_TO_UPDATE": {
+          "fields": [
+            "SHAPE",
+            "INDEX_TO_UPDATE_FIELD"
+          ]
+        }
+      },
+      "privileges": [
+        {
+          "grantee": "SDE",
+          "privilege": "SELECT"
+        },
+        {
+          "grantee": "PRIVILEGE_TO_ADD",
+          "privilege": "SELECT"
+        }
+      ],
+      "row_count": 2318080,
+      "sde_type": "Feature Class",
+      "srid": 4326
+    },
+    "TABLE_TO_ADD": {
+      "fields": {
+        "ADDRESS": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "AGENCY_RESPONSIBLE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "DESCRIPTION": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "DESCRIPTION_FULL": {
+          "db_type": "NCLOB",
+          "length": 4000,
+          "nullable": true
+        },
+        "EXPECTED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "MEDIA_URL": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "OBJECTID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": false
+        },
+        "PRIVATE_CASE": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "REQUESTED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "SERVICE_CODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NAME": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NOTICE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_REQUEST_ID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "SHAPE": {
+          "db_type": "ST_GEOMETRY",
+          "length": 256,
+          "nullable": true
+        },
+        "STATUS": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "STATUS_NOTES": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SUBJECT": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "TYPE_": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "UPDATED_DATETIME": {
+          "db_type": "TIMESTAMP(6)",
+          "length": 11,
+          "nullable": true
+        },
+        "ZIPCODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        }
+      },
+      "indexes": {
+        "TABLE_TO_ADD_INDEX": {
+          "fields": [
+            "SHAPE"
+          ]
+        }
+      },
+      "privileges": [
+        {
+          "grantee": "TABLE_TO_ADD_PRIVILEGE",
+          "privilege": "SELECT"
+        }
+      ],
+      "row_count": 2318080,
+      "sde_type": "Feature Class",
+      "srid": 4326
+    }
+  },
+  "USER_TO_ADD": {
+    "USER_TO_ADD_TABLE": {
+      "fields": {
+        "ADDRESS": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "AGENCY_RESPONSIBLE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "EXPECTED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "LAT": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "LON": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "MEDIA_URL": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "OBJECTID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": false
+        },
+        "REQUESTED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "SERVICE_CODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NAME": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_NOTICE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "SERVICE_REQUEST_ID": {
+          "db_type": "NUMBER",
+          "length": 22,
+          "nullable": true
+        },
+        "SHAPE": {
+          "db_type": "ST_GEOMETRY",
+          "length": 256,
+          "nullable": true
+        },
+        "STATUS": {
+          "db_type": "VARCHAR2",
+          "length": 6,
+          "nullable": true
+        },
+        "STATUS_NOTES": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        },
+        "UPDATED_DATETIME": {
+          "db_type": "DATE",
+          "length": 7,
+          "nullable": true
+        },
+        "ZIPCODE": {
+          "db_type": "NVARCHAR2",
+          "length": 4000,
+          "nullable": true
+        }
+      },
+      "indexes": {
+        "USER_TO_ADD_INDEX": {
+          "fields": [
+            "SHAPE"
+          ]
+        }
+      },
+      "privileges": [
+        {
+          "grantee": "USER_TO_ADD_PRIVILEGE",
+          "privilege": "SELECT"
+        }
+      ],
+      "row_count": 1856161,
+      "sde_type": "Feature Class",
+      "srid": 4326
+    }
+  }
+}

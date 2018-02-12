@@ -1,0 +1,30 @@
+# config for the `create` command
+create:
+  gis:
+    db: oraclesde://sde:password@gis__tns
+  users:
+    include:
+      - GIS_
+    exclude:
+      - GIS_ACS
+
+# config for the `get_changes` command
+get_changes:
+  logging:
+    version: 1
+    formatters:
+      basic:
+        format: '%(asctime)s %(message)s'
+      json:
+        (): 'pythonjsonlogger.jsonlogger.JsonFormatter'
+        format: '(inventory_time) (change_type) (change_data)'
+    handlers:
+      file:
+        class : logging.handlers.RotatingFileHandler
+        formatter: basic
+        filename: changes.log
+        maxBytes: 1024
+        backupCount: 3
+    root:
+      level: INFO
+      handlers: [file]
