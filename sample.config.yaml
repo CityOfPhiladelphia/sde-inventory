@@ -1,6 +1,6 @@
 # config for the `create` command
 create:
-  gis:
+  sde:
     db: oraclesde://sde:password@gis__tns
   users:
     include:

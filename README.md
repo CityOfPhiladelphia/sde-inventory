@@ -1,4 +1,4 @@
-# gis-inventory
+# sde-inventory
 
 A command-line utility for snapshotting the schema of an ArcSDE geodatabase and detecting changes. Generally speaking, this covers:
 - users
@@ -14,7 +14,7 @@ A command-line utility for snapshotting the schema of an ArcSDE geodatabase and 
 
 _optional, but recommended_: Do all this in a [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
 
-1. Install this repo: `pip install git+git://github.com/CityOfPhiladelphia/gis-inventory.git`
+1. Install this repo: `pip install git+git://github.com/CityOfPhiladelphia/sde-inventory.git`
 2. Install geopetl: `pip install git+git://github.com/CityOfPhiladelphia/geopetl.git`
 3. Install requirements: `pip install -r requirements.txt`
 
@@ -24,7 +24,7 @@ See `sample.config.yaml` for available options.
 
 ## Usage
 
-For a summary of commands and options, run `gis_inventory --help`.
+For a summary of commands and options, run `sde_inventory --help`.
 
 ### `create [--config/-c <config file>]`
 

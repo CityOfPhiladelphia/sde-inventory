@@ -45,9 +45,10 @@ def create(config, debug):
 
     # get the gis db connection string
     # TODO handle arg
-    dsn = config.get('gis', {}).get('db')
+    dsn = config.get('sde', {}).get('db')
 
     # connect to the db
+    # TODO make this work with databases other than oracle
     db = OracleSdeDatabase(dsn)
 
     # get all users
