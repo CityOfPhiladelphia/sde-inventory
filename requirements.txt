@@ -1,6 +1,0 @@
-click==6.7
-cx-Oracle==6.1
-petl==1.1.1
-# TODO this is a geopetl dependency, not used by this project. geopetl should lazy load this.
-psycopg2==2.7.4
-PyYAML==3.12

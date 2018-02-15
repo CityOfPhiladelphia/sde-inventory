@@ -7,5 +7,6 @@ setup(name='sde_inventory',
            'console_scripts': [
                'sde_inventory=sde_inventory.cli:main',
            ],
-      }
+      },
+      install_requires=['click', 'PyYAML',]
      )
