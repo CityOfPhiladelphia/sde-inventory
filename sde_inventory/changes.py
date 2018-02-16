@@ -274,11 +274,11 @@ def changes_for_inventory(old_users, new_users, timestamp):
 
         # if old user not in new users
         except KeyError:
-            push_change({
+            changes.append({
                 'type':     'REMOVE_USER',
                 'date':     timestamp,
                 'user':     old_user,
-            }, changes)
+            })
 
     # loop over new users
     for new_user, new_tables in new_users.items():
@@ -286,11 +286,11 @@ def changes_for_inventory(old_users, new_users, timestamp):
             old_tables = old_users[new_user]
         # if new user not in old users
         except KeyError:
-            push_change({
+            changes.append({
                 'type':     'ADD_USER',
                 'date':     timestamp,
                 'user':     new_user,
-            }, changes)
+            })
 
             # get child changes for new user (tables, indexes, privs)
             user_changes = changes_for_user(None, new_tables, new_user, timestamp)
