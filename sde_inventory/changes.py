@@ -143,23 +143,23 @@ def changes_for_indexes(old_indexes, new_indexes, user, table, timestamp):
                 })
                 continue
 
-        # get index updates - handling these as add/removes (see note
-        # on field updates above)
-        if not indexes_are_equal(old_index_attrs, new_index_attrs):
-            changes.append({
-                'type':     'REMOVE_INDEX',
-                'date':     timestamp,
-                'user':     user,
-                'table':    table,
-                'data':     old_index_attrs,
-            })
-            changes.append({
-                'type':     'ADD_INDEX',
-                'date':     timestamp,
-                'user':     user,
-                'table':    table,
-                'data':     new_index_attrs
-            })
+            # get index updates - handling these as add/removes (see note
+            # on field updates above)
+            if not indexes_are_equal(old_index_attrs, new_index_attrs):
+                changes.append({
+                    'type':     'REMOVE_INDEX',
+                    'date':     timestamp,
+                    'user':     user,
+                    'table':    table,
+                    'data':     old_index_attrs,
+                })
+                changes.append({
+                    'type':     'ADD_INDEX',
+                    'date':     timestamp,
+                    'user':     user,
+                    'table':    table,
+                    'data':     new_index_attrs
+                })
 
     # loop over new indexes
     for new_index_name, new_index_attrs in new_indexes.items():
