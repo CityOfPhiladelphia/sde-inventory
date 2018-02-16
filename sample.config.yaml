@@ -1,10 +1,13 @@
 # config for the `create` command
 create:
   sde:
+    # connection string to the sde database
     db: oraclesde://sde:password@gis__tns
   users:
+    # include users that contain any of these strings
     include:
       - GIS_
+    # exclude users that contain any of these strings
     exclude:
       - GIS_ACS
 
@@ -21,10 +24,10 @@ get_changes:
     handlers:
       file:
         class : logging.handlers.RotatingFileHandler
-        formatter: basic
+        formatter: json
         filename: changes.log
         maxBytes: 1024
-        backupCount: 3
+        backupCount: 0
     root:
       level: INFO
       handlers: [file]
