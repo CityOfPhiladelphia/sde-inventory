@@ -305,6 +305,8 @@ def changes_for_inventory(old_users, new_users, timestamp):
 def get_changes(old, new, config):
     """Compares two inventory snapshots to detect schema changes."""
 
+    sys.stderr.write('Calculating changes...\n')
+
     # read config
     config_path = config
     with open(config_path, 'r') as config_yaml:

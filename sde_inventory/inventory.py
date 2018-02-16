@@ -36,6 +36,8 @@ def create(config, debug):
     includes tables, fields, privileges, and indexes. Outputs to stdout by
     default, or pickles to a file if an --output flag was specified."""
 
+    sys.stderr.write('Creating inventory...\n')
+
     start = datetime.now()
 
     # read config
